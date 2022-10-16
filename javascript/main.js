@@ -26,7 +26,7 @@ function login() {
 
   // Compare the email and password entered with the table
   for (const [key, value] of listOfUser) {
-    if (email == key && password == value) {
+    if (email === key && password === value) {
       alert("Login Successfull !");
 
       // window.location changes current displayed page
@@ -54,11 +54,11 @@ function redirect(email) {
   // admin goes to 'accueilAdmin.html' page
   switch (typeOfPrivilege) {
     case "A":
-      return "accueilAdmin.html";
+      return "Users/Admin.html";
     case "T":
-      return "accueilEnseignant.html";
+      return "Users/Teacher.html";
     case "S":
-      return "accueilEtudiant.html";
+      return "Users/Student.html";
   }
 }
 document.querySelectorAll(".input-field").forEach((item) => {
