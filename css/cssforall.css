@@ -10,9 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 5em;
-  padding-block: 1em;
-  height: 3.5rem;
+  padding: 20px 40px 20px 80px;
+  height: 4rem;
   border-bottom: solid 2px rgba(76, 76, 76, 0.435);
 }
 
