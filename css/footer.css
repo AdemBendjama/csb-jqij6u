@@ -2,16 +2,16 @@
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background: rgba(16, 17, 16, 0.726);
   padding: 15px 0px 0px 0px;
 }
 
 .footer p {
-  font-size: 16px;
+  font-size: 10px;
   padding: 7px;
 }
 
 .footer img {
-  width: 200px;
+  width: 110px;
 }
