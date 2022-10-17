@@ -6,19 +6,21 @@
 
 .Navbar {
   display: block;
-  background: rgb(7, 7, 7);
+  background: #161515;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 7em;
-  padding-block: 2em;
-  height: 2.5rem;
+  padding-inline: 5em;
+  padding-block: 1em;
+  height: 3.5rem;
+  border-bottom: solid 2px rgba(76, 76, 76, 0.435);
 }
 
 nav ul {
+  margin: 0;
   list-style: none;
   display: flex;
-  gap: 5em;
+  gap: 3em;
 }
 
 nav ul li a {
@@ -26,7 +28,7 @@ nav ul li a {
   text-decoration: none;
   list-style-type: none;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1rem;
   position: relative;
 }
 

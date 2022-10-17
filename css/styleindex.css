@@ -21,8 +21,11 @@
 }
 
 .Con1 h1 {
-  font-size: 70px;
-  margin-bottom: -30px;
+  font-size: 50px;
+  margin-bottom: -10px;
+}
+.Con1 h3 {
+  font-size: 14px;
 }
 
 .Con1 h1 span {
@@ -33,20 +36,26 @@
 
 form {
   border-radius: 30px;
-  padding: 30px;
+  padding: 20px 20px 30px 20px;
   box-shadow: -1px 20px 25px 3px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 20px 25px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 20px 25px 3px rgba(0, 0, 0, 0.75);
 }
 
 .headers {
-  margin: 50px;
-  font-size: 40px;
+  margin: 40px;
+  font-size: 25px;
+}
+
+.headers label {
+  padding-left: 5px;
 }
 
 .input-field {
   width: 100%;
-  font-size: 30px;
+  font-size: 22px;
+  margin-top: 10px;
+  padding: 3px 0 3px 10px;
   border: solid 3px rgb(184, 184, 184);
   border-radius: 30px;
 }
@@ -54,13 +63,15 @@ form {
 .button {
   position: relative;
   bottom: -5px;
-  left: 260px;
-  padding: 20px;
-  width: 120px;
-  font-size: 20px;
+  left: 400px;
+  padding: 15px;
+  width: 80px;
+  font-size: 15px;
   border-radius: 30px;
   cursor: pointer;
   transition: 0.5s;
+  color: rgb(0, 0, 0);
+  background-color: rgba(147, 255, 123, 0.556);
 }
 
 .button:hover {
@@ -71,8 +82,8 @@ form {
 }
 
 .logo1 {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   position: absolute;
   top: 10%;
   left: 18%;
