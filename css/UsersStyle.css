@@ -20,7 +20,9 @@ html {
 }
 
 .user-list {
+  background-color: #f3f3f3;
   width: 100%;
+  padding: 4rem;
 }
 
 /*SideBar*/
@@ -97,4 +99,16 @@ html {
 
 #sidebar .nav a:hover::before {
   width: 100%;
+}
+
+/*Buttons */
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+.options input {
+  padding: 2rem;
+  background-color: #208c3b;
 }
