@@ -12,7 +12,7 @@
   justify-content: space-between;
   padding: 20px 40px 20px 80px;
   height: 4rem;
-  border-bottom: solid 2px rgba(76, 76, 76, 0.435);
+  border-bottom:solid 2px rgba(76, 76, 76, 0.435) ;
 }
 
 nav ul {
@@ -20,6 +20,10 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 3em;
+}
+nav ul li {
+  display: flex;
+  gap: 0.7em;
 }
 
 nav ul li a {
@@ -44,4 +48,8 @@ nav ul li a::before {
 
 nav ul li a:hover::before {
   width: 100%;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: white;
 }

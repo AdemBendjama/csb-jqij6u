@@ -1,114 +1,53 @@
 html {
-  height: 100%;
+    height: 100%;
 }
 
 .containers {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .logo img {
-  width: 50px;
+    width: 50px;
 }
 
 .center-content {
-  display: flex;
-  height: 100%;
+    display: flex;
+    height: 100%;
 }
 
-.user-list {
-  background-color: #f3f3f3;
-  width: 100%;
-  padding: 4rem;
-}
-
-/*SideBar*/
-
-#sidebar {
-  z-index: 1000;
-  left: 250px;
-  width: 250px;
-  height: 100%;
-  overflow-y: auto;
-  background: #208c3b;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-#sidebar header {
-  background-color: #037334;
-  font-size: 20px;
-  line-height: 52px;
-  text-align: center;
-}
-
-#sidebar header a {
-  color: #fff;
-  display: block;
-  text-decoration: none;
-}
-
-#sidebar header a:hover {
-  color: #fff;
-}
-
-#sidebar .nav {
-  display: block;
-}
-
-#sidebar .nav li {
-  padding: 16px 24px;
-  background: none;
-  border-bottom: 1px solid #00ff4c41;
-  color: #faeded;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-
-#sidebar .nav a {
-  text-align: center;
-  background: none;
-  color: #faeded;
-  font-size: 16px;
-  text-decoration: none;
-  position: relative;
-}
-
-#sidebar .nav a:hover {
-  background: none;
-  color: #faeded;
-}
-
-#sidebar .nav a::before {
-  content: "";
-  width: 0%;
-  height: 2px;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  background-color: white;
-  transition: 0.5s ease;
-}
-
-#sidebar .nav a:hover::before {
-  width: 100%;
+.page-content {
+    background-color: #f3f3f3;
+    width: 100%;
+    padding:4rem;
 }
 
 /*Buttons */
-.options {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 2rem;
+.options{
+    display:flex;
+    justify-content: end;
+    gap: 3rem;
+    padding:0  0 2rem 0 ;
 }
+
 .options input {
-  padding: 2rem;
-  background-color: #208c3b;
+    padding:0.8rem;
+    width: 6rem;
 }
+.options select {
+    padding:0.8rem;
+    width: 6rem;
+    background-color: #EFEFEF;
+}
+
+
+/* List Of Users Table*/
+thead tr {
+    cursor: pointer;
+}
+
+
+/* Add User Form */
