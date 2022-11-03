@@ -8,7 +8,6 @@ https://adembendjama.github.io/csb-jqij6u/
 
 # Profiles you can login with
 
-1. wm.facntic@univ-constantine2.dz => webmaster64
-2. meriem.belguidoum@univ-constantine2.dz => meriembel8080
-3. adambendjamaa2013@gmail.com => adam159753654
-4. ahmedamoukrane@gmail.com => ahmed2022
+1. wm.facntic@univ-constantine2.dz => password: webmaster => [ Admin Account ]
+2. meriem.belguidoum@univ-constantine2.dz => password: meriembel => [ Teacher Account ]
+3. adambendjamaa2013@gmail.com => password: adamben => [ Student Account ]

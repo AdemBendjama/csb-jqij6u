@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/sidebar.css">
     <link rel="stylesheet" href="../../css/UsersStyle.css">
+    <link rel="stylesheet" href="../../css/FormStyle.css" />
+
 
 </head>
 <body>
@@ -73,39 +75,25 @@
             </div>
 
             <div class="page-content">
-                <div class="options">
-                    <select  name="" id="button" class="button">
-                        <option value="id" selected>ID</option>
-                        <option value="name">Name</option>
-                        <option value="email">Email</option>
-                        <option value="type">Type</option>
-                    </select>
-                </div>
-                <table class="table table-dark">
-                    <thead>
-                        <tr>
-                            <td>Name</td>
-                            <td>Email</td>
-                            <td>Password</td>
-                            <td>Type</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Adem Bendjama</td>
-                            <td>bendjamaaadam2013@gmail.com</td>
-                            <td>adam159753654</td>
-                            <td>Student</td>
-                        </tr>
-                        <tr>
-                            <td>Meriem Belguidoum</td>
-                            <td>meriem.belguidoum@univ-constantine2.dz</td>
-                            <td>meriembel8080</td>
-                            <td>Teacher</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
+                <form class="form" action="post">
+                    <ul>
+                      <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" maxlength="100" />
+                        <span>Enter Username [ Required ]</span>
+                      </li>
+                  
+                      <li>
+                        <label for="Password">Password</label>
+                        <input type="password" name="password" maxlength="100" />
+                        <span>Enter Password to Confirm [ Required ]</span>
+                      </li>
+                      <li>
+                        <input type="submit" value="Delete" />
+                      </li>
+                    </ul>
+                  </form>
+                  
             </div>
 
         </div>
