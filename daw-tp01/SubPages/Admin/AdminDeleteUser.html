@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../css/UsersStyle.css">
     <link rel="stylesheet" href="../../css/FormStyle.css" />
 
+
 </head>
 <body>
     <div class="containers">
@@ -29,8 +30,13 @@
             <nav>
                 <ul>
                     <li>
+                        <a href="../../index.html">
+                            Log Out
+                        </a>
+                    </li>
+                    <li>
                         <img src="../../resources/admin-24.png" alt="profile-pic grey icon">
-                        <a href="AdminMain.html"  >
+                        <a href="AdminMain.html">
                             Web Master
                         </a>
                     </li>
@@ -38,7 +44,7 @@
             </nav>
         </div>
 
-        
+
         <div class="center-content">
             <div id="sidebar">
                 <header>
@@ -48,25 +54,25 @@
                     <li>
                         <img src="../../resources/list-2-24.png" alt="list-users grey icon">
                         <a href="AdminMain.html">
-                             List Users
+                            List Users
                         </a>
                     </li>
                     <li>
                         <img src="../../resources/change-user-24.png" alt="add-user grey icon">
                         <a href="AdminUpdateUser.html">
-                             Update a User
+                            Update a User
                         </a>
                     </li>
                     <li>
                         <img src="../../resources/remove-user-24.png" alt="add-user grey icon">
                         <a href="AdminDeleteUser.html">
-                             Delete a User
+                            Delete a User
                         </a>
                     </li>
                     <li>
                         <img src="../../resources/add-user-24.png" alt="add-user grey icon">
                         <a href="AdminAddUser.html">
-                             Add a User
+                            Add a User
                         </a>
                     </li>
 
@@ -74,38 +80,27 @@
             </div>
 
             <div class="page-content">
-                <form class="form" action="post">
+                <form class="form" action="AdminMain.html">
                     <ul>
-                      <li>
-                        <label for="name">Old Name</label>
-                        <input type="text" name="name" maxlength="100" required/>
-                        <span>Enter a valid Username [ Required ]</span>
-                      </li>
-                      <li>
-                        <label for="name">New Name</label>
-                        <input type="text" name="name" maxlength="100" required/>
-                        <span>Enter a new Username [ Required ]</span>
-                      </li>
-                      <li>
-                        <label for="email">New Email</label>
-                        <input type="email" name="email" maxlength="100" />
-                        <span>Enter a valid email address [ Optional ]</span>
-                      </li>
-                      <li>
-                        <label for="Password">New Password</label>
-                        <input type="password" name="password" maxlength="100" />
-                        <span>Enter a new Password [ Optional ]</span>
-                      </li>
-                      <li>
-                        <label for="Position">New Position</label>
-                        <textarea name="Position" pattern="Teacher|Admin" ></textarea>
-                        <span>Teacher or Student [ Optional ]</span>
-                      </li>
-                      <li>
-                        <input type="submit" value="Update" />
-                      </li>
+                        <li>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="delete-name" maxlength="100" required
+                                spellcheck='false' />
+                            <span>Enter Username [ Required ]</span>
+                        </li>
+
+                        <li>
+                            <label for="Password">Password</label>
+                            <input type="password" name="password" id="delete-password" minlength="7" maxlength="100"
+                                required spellcheck='false' />
+                            <span>Enter Password to Confirm [ Required ]</span>
+                        </li>
+                        <li>
+                            <input type="submit" id="delete-submit" value="Delete" />
+                        </li>
                     </ul>
-                  </form>                  
+                </form>
+
             </div>
 
         </div>
@@ -123,6 +118,11 @@
             <p>Contact webmaster@univ-constantine2</p>
         </div>
     </div>
+    <script src="../../storage.js"></script>
+    <script src="scripts/adminMain.js"></script>
+    <script>
+        deleteUserForm();
+    </script>
 
 </body>
 </html>

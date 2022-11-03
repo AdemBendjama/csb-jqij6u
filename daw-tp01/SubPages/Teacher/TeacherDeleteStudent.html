@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/sidebar.css">
     <link rel="stylesheet" href="../../css/UsersStyle.css">
+    <link rel="stylesheet" href="../../css/FormStyle.css">
 
 </head>
 <body>
@@ -27,6 +28,11 @@
             </div>
             <nav>
                 <ul>
+                    <li>
+                        <a href="../../index.html">
+                          Log Out
+                        </a>
+                      </li>
                     <li>
                         <img src="../../resources/teacher-24.png" alt="profile-pic grey icon">
                         <a href="TeacherMain.html">
@@ -57,37 +63,37 @@
                     </li>
                     <li>
                         <img src="../../resources/remove-user-24.png" alt="list-users grey icon">
-                        <a href="TeacherDeleteUser.html">
-                            Delete User
+                        <a href="TeacherDeleteStudent.html">
+                            Delete Student
                         </a>
                     </li>
                 </ul>
 
             </div>
 
+
             <div class="page-content">
-
-                <table class="table table-dark">
-                    <thead>
-                        <tr>
-                            <td>Module</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        <tr>
-                            <td><a href="TeacherModuleList.html">DAC</a></td>
-                        </tr>
-                        <tr>
-                            <td> <a href="TeacherModuleList.html">POO</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <form class="form" action="TeacherListUsers.html">
+                    <ul>
+                      <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="delete-name" maxlength="100" required  spellcheck='false' />
+                        <span>Student Fullname [ Required ]</span>
+                      </li>
+                  
+                      <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="delete-email" maxlength="100" required  spellcheck='false'/>
+                        <span>Student Email [ Required ]</span>
+                      </li>
+                      <li>
+                        <input type="submit" id="delete-submit" value="Delete" />
+                      </li>
+                    </ul>
+                  </form>
             </div>
 
         </div>
-
-    </div>
     </div>
     <div class="footer">
         <div>
@@ -102,6 +108,10 @@
             <p>Contact webmaster@univ-constantine2</p>
         </div>
     </div>
-
+    <script src="../../storage.js"></script>
+    <script src="scripts/TeacherMain.js"></script>
+    <script>
+         deleteUserForm();
+    </script>
 </body>
 </html>

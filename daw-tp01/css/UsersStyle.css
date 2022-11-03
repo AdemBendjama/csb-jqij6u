@@ -14,12 +14,13 @@ html {
 }
 
 .center-content {
+  margin-top: 64px;
   display: flex;
   height: 100%;
 }
 
 .page-content {
-  background: url(../resources/shapelined-_JBKdviweXI-unsplash.jpg);
+  background:url(../resources/shapelined-_JBKdviweXI-unsplash.jpg);
   width: 100%;
   padding: 4rem;
 }
@@ -58,19 +59,17 @@ html {
   outline: none;
 }
 
+
 /* List Of Users Table*/
-thead tr {
-  cursor: pointer;
-}
 
 .student-module table thead tr td,
-.student-module table tbody tr td {
-  width: 190px;
+.student-module table tbody tr td{
+    width: 190px;
 }
 
-table tbody a {
+table tbody a{
   color: #00b24d;
 }
-table tbody a:hover {
+table tbody a:hover{
   color: #00e362;
 }
